@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#87e8fa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_number_edit_text"
+            android:layout_gravity="center_vertical"
+            android:background="#cccaca"
+            android:hint="Enter phone number here"
+            android:inputType="phone"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/add_contact_image_view"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/message_edit_text"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:background="#c2c0c0"
+        android:hint="Enter your massage here"
+        android:maxLines="5"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Send SMS"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_status_text_view"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Message not sent yet."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delivery_status_text_view"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Message not delivered yet."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>
